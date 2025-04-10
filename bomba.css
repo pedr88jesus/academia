@@ -1,0 +1,12 @@
+#bl{background-color: blueviolet;}
+table { witdh: 100%;
+    borderma-collapse:collaspe; ; /* Remover 
+    espaços entre as bordas */
+   }
+    th, td{ border: 2px solid #D3D3D3; /* adicione bordas a celulas */
+            padding: 8px;
+ text-align: center ;}
+ th {
+ background-color: green; /*cor de fundo para o cabeçalho*/
+ color: white; /* cor do texto do cabeçalho*/
+ }
