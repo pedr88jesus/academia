@@ -6,232 +6,80 @@
     <title>Document</title>
 </head>
 <body>
-    <img src="" alt="">
-    <h1>    </h1>
-    <div class="">
-<h2>  iidjofjo</h2>
-    <form action="#" method="post">
-        <!--dados-->
-        <label for="nome">nome:</label>
-    <input type="text " id="nome" name="nome" required>
-
-<label for="endereco">endereço:</label>
+<div class="form-container">
+<h2>Faça sua Encomenda</h2>
+<form action="#" method="post">
+<--! Dados do Cliente -->
+<label for="nome">Nome: </label>
+<input type="text" id="nome" name="nome" required>
+<label for="endereco">Endereço: </label>
 <input type="text" id="endereco" name="endereco" required>
-
-<label for="telefone">telefone:</label>
+<label for="telefone">Telefone: </label>
 <input type="tel" id="telefone" name="telefone" required>
+<label for="whatsapp">WhatsApp:</label>
+<input type="tel" id="whatsapp" name="whatsapp" required>
+<!-- Tipo de Produto -->
 
-<label for="whatsapp">whatsapp:</label>
-<input type="tel" id="whatsapp" nome="whatsapp" required >
+<label for="produto">O que deseja encomendar?</label>
 
-<!-- tipo-->
-<label for="produto">qual deseja escolher?</label>
-<select id="produto" name="produto" required >
-<option value=""> selecione uma opção</option>
-<option value="de">ed</option>
-<option value="dd">efef</option>
-<option value="ed">ddd</option>
+<select id="produto" name="produto" required>
+
+<option value="">Selecione uma opção</option>
+<option value="bolos">Bolos</option>
+
+<option value="salgados">Salgados</option>
+<option value="sobremesa">Sobremesa</option>
+<option value="outros">Outros</option>
+
 </select>
 
-<!-- des-->
- <label for="rwe"> possui?</label>
- <textarea
 
+<1-- Descrição do Pedido -->
+<label for="descricao">Descreva seu pedido:</label>
+<textarea id="descricao" name="descricao" rows="4" required></textarea>
+<1-- Restrições Alimentares -->
+<label for="restricao">Possui alguma restrição alimentar?</label>
+<textarea id="restricao" name="restricao" rows="2" placeholder="Ex: sem lactose, sem glúten..."></textarea>
+
+<option value="pix">Pix</option>
+
+<!-- Forma de Pagamento -->
+<label for="pagamento">Forma de pagamento:</label>
+<select id="pagamento" name="pagamento" required>
+<option value="">Selecione uma opção</option>
+<option value="cartao">Cartão de Crédito</option>
+<option value="boleto">Boleto</option>
+<option value="dinheiro">Dinheiro na entrega</option>
+
+<!-- Data e Hora -->
+48
+<label for="data">Data da encomenda: </label>
+49
+50
+<input type="date" id="data" name="data" required>
+51
+<label for="hora">Horário desejado: </label>
+52
+<input type="time" id="hora" name="hora" required>
+53
+54
+<!-- Entrega ou Retirada -->
+<label for="entrega">Como deseja receber: </label>
+55
+<select id="entrega" name="entrega" required>
+56
+57
+<option value="">Selecione uma opção</option>
+<option value="entrega">Entrega</option>
+
+<option value="retirada">Retirada</option>
+</select>
+<!-- Botão de envio ->
+<button type="submit">Enviar Pedido</button>
+
+</form>
+</div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
 </body>
 </html>
