@@ -1,0 +1,162 @@
+/* --- ESTILO PARA A PÁGINA DARK --- */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Cor de fundo escura */
+    color: #e0e0e0; /* Texto claro */
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+/* --- CABEÇALHO --- */
+.header {
+    background-color: #1c1c1c;
+    color: #f1f1f1;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 2px solid #333;
+}
+
+.header-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #3498db;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+.header .profession {
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+/* --- SEÇÃO SOBRE --- */
+.bio {
+    padding: 40px 20px;
+    background-color: #1e1e1e;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.bio h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.bio p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* --- GALERIA DE IMAGENS --- */
+.gallery {
+    padding: 40px 20px;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.gallery h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.gallery-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-images img:hover {
+    transform: scale(1.05);
+}
+
+/* --- CONQUISTAS --- */
+.achievements {
+    padding: 40px 20px;
+    background-color: #1e1e1e;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.achievements h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.achievements ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.achievements li {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* --- REDES SOCIAIS --- */
+.socials {
+    padding: 40px 20px;
+    background-color: #2a2a2a;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.socials h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-button {
+    padding: 15px 30px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.social-button:hover {
+    background-color: #2980b9;
+}
+
+/* --- RODAPÉ --- */
+.footer {
+    background-color: #1c1c1c;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #333;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
