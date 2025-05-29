@@ -1,89 +1,55 @@
-/* ---ESTILO PARA O FORMULARIO --- */
+/* ---ESTILO PARA O FORMULARIO ESCURO --- */
 
 .form-container {
-
-max-width: 600px;
-
-margin: 30px auto;
-
-background-color: #fff5f8;
-
-padding: 30px;
-
-border-radius: 10px;
-
-box-shadow: 0 0 12px ☐ rgba(0, 0, 0, 0.1);
-
-border: 1px solid #dcb;
- }
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #2a2a2a;  /* Cor de fundo escura */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5); /* Sombra mais forte */
+  border: 1px solid #444; /* Borda mais sutil */
+}
 
 form {
-
-display: flex;
-
-flex-direction: column;
-
+  display: flex;
+  flex-direction: column;
 }
-
 
 form label {
-
-margin-top: 15px;
-
-font-weight: bold;
-
-color: brown;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #f1f1f1; /* Cor clara para contraste */
 }
+
 form input,
-
 form select,
-
 form textarea {
-
-margin-top: 5px;
-
-padding: 10px;
-
-font-size: 16px;
-
-border-radius: 5px;
-border: 1px solid #ccc;
-
-background-color: #fff;
-
-box-sizing: border-box;
-
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #555; /* Cor da borda mais suave */
+  background-color: #3c3c3c;  /* Cor de fundo escura para os campos */
+  color: #f1f1f1; /* Texto claro para contraste */
+  box-sizing: border-box;
 }
 
 form textarea {
-
-resize: vertical;
-
+  resize: vertical;
 }
+
 form button {
-
-margin-top: 25px;
-
-padding: 12px;
-
-font-size: 18px;
-
-background-color: brown;
-
-color: white;
-
-border: none;
-
-border-radius: 8px;
-
-cursor: pointer;
-
-transition: background-color 0.3s ease;
-
+  margin-top: 25px;
+  padding: 12px;
+  font-size: 18px;
+  background-color: #8b4513;  /* Cor do botão em tom mais quente */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 form button:hover {
-
-background-color: #a0522d;
-
+  background-color: #a0522d; /* Tom mais claro ao passar o mouse */
 }

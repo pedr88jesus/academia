@@ -8,69 +8,70 @@
 <body>
 
 <div class="form-container">
-    <h2>Faça sua Encomenda</h2>
+    <h2>Formulário para Treino Personalizado</h2>
     <form action="https://formspree.io/f/xyzwavyk" method="post">
 
-        <!-- Dados do Cliente -->
-        <label for="nome">Nome: </label>
+        <!-- Dados Pessoais -->
+        <label for="nome">Nome Completo: </label>
         <input type="text" id="nome" name="nome" required>
 
-        <label for="endereco">Endereço: </label>
-        <input type="text" id="endereco" name="endereco" required>
+        <label for="idade">Idade: </label>
+        <input type="number" id="idade" name="idade" required>
+
+        <label for="email">E-mail: </label>
+        <input type="email" id="email" name="email" required>
 
         <label for="telefone">Telefone: </label>
         <input type="tel" id="telefone" name="telefone" required>
 
-        <label for="whatsapp">WhatsApp:</label>
-        <input type="tel" id="whatsapp" name="whatsapp" required>
-
-        <!-- Tipo de Produto -->
-        <label for="produto">O que deseja encomendar?</label>
-        <select id="produto" name="produto" required>
+        <!-- Objetivo do Treino -->
+        <label for="objetivo">Qual seu objetivo principal? </label>
+        <select id="objetivo" name="objetivo" required>
             <option value="">Selecione uma opção</option>
-            <option value="bolos">Bolos</option>
-            <option value="salgados">Salgados</option>
-            <option value="sobremesa">Sobremesa</option>
+            <option value="emagrecimento">Emagrecimento</option>
+            <option value="hipertrofia">Hipertrofia (ganho muscular)</option>
+            <option value="condicionamento">Condicionamento físico</option>
+            <option value="flexibilidade">Flexibilidade</option>
+            <option value="forca">Força</option>
             <option value="outros">Outros</option>
         </select>
 
-        <!-- Descrição do Pedido -->
-        <label for="descricao">Descreva seu pedido:</label>
-        <textarea id="descricao" name="descricao" rows="4" required></textarea>
-
-        <!-- Restrições Alimentares -->
-        <label for="restricao">Possui alguma restrição alimentar?</label>
-        <textarea id="restricao" name="restricao" rows="2" placeholder="Ex: sem lactose, sem glúten..."></textarea>
-
-        <!-- Forma de Pagamento -->
-        <label for="pagamento">Forma de pagamento:</label>
-        <select id="pagamento" name="pagamento" required>
+        <!-- Nível de Condicionamento -->
+        <label for="nivel">Qual seu nível de condicionamento físico? </label>
+        <select id="nivel" name="nivel" required>
             <option value="">Selecione uma opção</option>
-            <option value="pix">Pix</option>
-            <option value="cartao">Cartão de Crédito</option>
-            <option value="boleto">Boleto</option>
-            <option value="dinheiro">Dinheiro na entrega</option>
+            <option value="iniciante">Iniciante</option>
+            <option value="intermediario">Intermediário</option>
+            <option value="avancado">Avançado</option>
         </select>
 
-        <!-- Data e Hora -->
-        <label for="data">Data da encomenda: </label>
-        <input type="date" id="data" name="data" required>
+        <!-- Restrições ou Lesões -->
+        <label for="lesoes">Possui alguma lesão ou restrição física? </label>
+        <textarea id="lesoes" name="lesoes" rows="3" placeholder="Descreva qualquer lesão ou restrição física"></textarea>
 
-        <label for="hora">Horário desejado: </label>
-        <input type="time" id="hora" name="hora" required>
-
-        <!-- Entrega ou Retirada -->
-        <label for="entrega">Como deseja receber: </label>
-        <select id="entrega" name="entrega" required>
+        <!-- Disponibilidade para Treino -->
+        <label for="dias">Quantos dias por semana pode treinar? </label>
+        <select id="dias" name="dias" required>
             <option value="">Selecione uma opção</option>
-            <option value="entrega">Entrega</option>
-            <option value="retirada">Retirada</option>
+            <option value="3_dias">3 dias por semana</option>
+            <option value="4_dias">4 dias por semana</option>
+            <option value="5_dias">5 dias por semana</option>
+            <option value="6_dias">6 dias por semana</option>
         </select>
+
+        <!-- Preferência de Treino -->
+        <label for="preferencia">Você tem alguma preferência de treino? </label>
+        <textarea id="preferencia" name="preferencia" rows="3" placeholder="Exemplo: treino com pesos, HIIT, treino funcional..."></textarea>
+
+        <!-- Meta de Peso -->
+        <label for="meta_peso">Qual sua meta de peso (caso tenha)? </label>
+        <input type="number" id="meta_peso" name="meta_peso" placeholder="Em kg, se aplicável">
+
+        <!-- Outros Detalhes -->
+        <label for="comentarios">Outros detalhes que você gostaria de adicionar? </label>
+        <textarea id="comentarios" name="comentarios" rows="3" placeholder="Informações adicionais sobre seu treino ou corpo"></textarea>
 
         <!-- Botão de envio -->
-        <button type="submit">Enviar Pedido</button>
+        <button type="submit">Enviar Formulário</button>
     </form>
 </div>
-
-</body>
-</html>
