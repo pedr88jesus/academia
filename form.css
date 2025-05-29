@@ -1,55 +1,73 @@
-/* ---ESTILO PARA O FORMULARIO ESCURO --- */
+/* ---ESTILO PARA O FORMULÁRIO ESCURO REFINADO --- */
 
 .form-container {
-  max-width: 600px;
-  margin: 30px auto;
-  background-color: #2a2a2a;  /* Cor de fundo escura */
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5); /* Sombra mais forte */
-  border: 1px solid #444; /* Borda mais sutil */
+  max-width: 650px;
+  margin: 40px auto;
+  background-color: #1e1e1e; /* Fundo mais escuro */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7); /* Sombra suave, mais moderna */
+  border: 1px solid #333; /* Borda mais suave e discreta */
 }
 
 form {
   display: flex;
   flex-direction: column;
+  gap: 20px; /* Mais espaçamento entre os elementos */
 }
 
 form label {
-  margin-top: 15px;
   font-weight: bold;
-  color: #f1f1f1; /* Cor clara par contraste */
+  color: #e0e0e0; /* Texto claro para contraste */
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
 }
 
 form input,
 form select,
 form textarea {
-  margin-top: 5px;
-  padding: 10px;
+  padding: 12px;
   font-size: 16px;
-  border-radius: 5px;
-  border: 1px solid #555; /* Cor da borda mais suave */
-  background-color: #3c3c3c;  /* Cor de fundo escura para os campos */
-  color: #f1f1f1; /* Texto claro para contraste */
+  border-radius: 8px;
+  border: 1px solid #444; /* Borda com cor mais suave */
+  background-color: #2a2a2a; /* Cor de fundo escura para os campos */
+  color: #f0f0f0; /* Texto claro para contraste */
   box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #f1c40f; /* Borda amarela ao focar para destacar */
+  background-color: #333; /* Fundo um pouco mais claro quando focado */
 }
 
 form textarea {
   resize: vertical;
+  min-height: 120px; /* Altura mínima para textarea */
 }
 
 form button {
-  margin-top: 25px;
-  padding: 12px;
+  padding: 15px;
   font-size: 18px;
-  background-color: #8b4513;  /* Cor do botão em tom mais quente */
+  font-weight: bold;
+  background-color: #3498db; /* Cor de fundo azul vibrante */
   color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 form button:hover {
-  background-color: #a0522d; /* Tom mais claro ao passar o mouse */
+  background-color: #2980b9; /* Tom mais escuro de azul ao passar o mouse */
+  transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
 }
+
+form button:active {
+  background-color: #1f78a3; /* Tom mais escuro de azul ao clicar */
+  transform: translateY(1px); /* Efeito de pressionar o botão */
+}
+
+body {background-color: #2a2a2a;}
