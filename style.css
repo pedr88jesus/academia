@@ -1,30 +1,141 @@
-
-img {float: ;
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;  /* Fundo escuro */
+  color: #f1f1f1;  /* Texto claro */
+  line-height: 1.6;
 }
 
-
-    p {color: white;
-font-family:  comic sans ms;
-     font-weight: bold;
+h1, h2, h3 {
+  color: #f44336;  /* Cor vermelha para títulos */
+  margin: 15px 0;
 }
 
-    body
-    { background-color: black;
+a {
+  color: #ff5722; /* Cor laranja para links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
 
-    h1{ color:red;}
+a:hover {
+  color: #ff9800;  /* Cor laranja mais clara ao passar o mouse */
+}
 
-    .img-container {
-      text-align: center;
-    }
+/* Estilo de Imagens */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 20px auto;
+}
 
+/* Formatação de parágrafos */
+p {
+  color: #ddd;  /* Cor do texto em parágrafos */
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.8;
+}
 
-    body, html {
-      margin:0;
-      padding:0;}
+/* Estilos para o container principal */
+.main-container {
+  padding: 20px;
+}
 
+/* Estilo para a seção de cabeçalho */
+.header {
+  text-align: center;
+  padding: 40px 0;
+}
 
+.header img {
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
 
+.header h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
 
-    body{text-color}
-.p9{color:white; }
+/* Estilo da seção de vídeo */
+.video-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+iframe {
+  border: 3px solid #f44336;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Seções de fisiculturistas */
+.fisiculturista {
+  margin: 30px 0;
+  padding: 20px;
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.fisiculturista h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.fisiculturista-image {
+  border-radius: 10px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.fisiculturista p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+/* Lista de fisiculturistas */
+.fisiculturistas-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.fisiculturistas-list li {
+  margin: 10px 0;
+}
+
+.fisiculturistas-list a {
+  font-size: 18px;
+  text-decoration: underline;
+  color: #ff5722;
+}
+
+.fisiculturistas-list a:hover {
+  color: #ff9800;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .fisiculturista p {
+    font-size: 16px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 350px;
+  }
+
+  .fisiculturista-image {
+    width: 100%;
+  }
+}
 
